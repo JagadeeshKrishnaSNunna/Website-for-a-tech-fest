@@ -1,0 +1,135 @@
+body{
+  font-family: Montserrat, sans-serif !important;
+}
+.logo{
+  margin-right: 30px !important;
+}
+.mainicon{
+  margin-left: 30px !important;
+  margin-top: 10px !important; 
+}
+.sicons{
+    margin-left: 40%;
+    
+}
+#buton:focus{
+  color: #ffffff;
+}
+.sicons a{
+    margin: 10px;
+    
+}
+.navbar{
+    background:transparent !important;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-family: Montserrat, sans-serif !important;
+    margin: 0px !important;
+}
+.navbar-toggler{
+    color: #ffffff !important;
+    border: 0px !important;
+    align-items: right;
+}
+.navbar-toggler :focus{
+  color: #ffffff !important;
+  outline: none !important;
+  box-shadow: none;
+}
+#navbarSupportedContent{
+    margin-right: 22% !important;
+    font-size: 18px;
+}
+.navbar-toggler:focus,.navbar-toggler:active {
+  outline: none !important;
+  box-shadow: none;
+  color: #ffffff;
+}
+.navbar a{
+    color: #ffffff !important;
+  
+}
+.navbar a:hover{
+    color: #000000 !important;
+background: #ffffff; 
+border-radius:12px; 
+}
+.active a{
+    color: #000000 !important;
+    background: #ffffff;
+    border-radius:12px; 
+    
+}
+  body{
+      margin: 0;
+      height: 100% !important;
+      width: 100% !important;
+      
+  }
+  .wrap{
+      z-index: 1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+  }
+  #particles-js canvas {
+      position: fixed;
+      background: #000000;
+    display: block;
+    
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0
+}
+
+  @media only screen and (max-width:768px){
+    .mainicon{
+      
+      margin-top: 20px !important; 
+    }
+    .nav-link{
+      margin-left: 0px !important
+    }
+    #navbarSupportedContent{
+      margin-left: 0px !important;
+      font-size: 18px;
+  }
+    .sicons{
+        position: absolute;
+        margin-left: 20%;
+        padding-left:20px;
+    } 
+    .active a{
+      color: #000000 !important;
+      background: #ffffff;
+      border-radius:12px; 
+      width: 60%;
+      margin-left: 0%;
+      padding: 5px !important;
+  }
+ .nav-item{
+   margin-left: 0% !important;
+ }
+    .credits{
+        padding-top:50px !important;
+    }
+    .credits p{
+        font-size: 12px; !important;
+    }
+  }
+  
+  /* ---- stats.js ---- */
+  
+  
