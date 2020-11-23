@@ -1,0 +1,92 @@
+#buton :focus {
+  color: #ffffff !important;
+  outline: none !important;
+  box-shadow: none;
+}
+#demo {
+  font-size: 50px !important;
+}
+.info {
+  margin-bottom: 230px !important;
+}
+@media only screen and (max-width: 768px) {
+  .container p {
+    text-align: left !important;
+    font-size: 15px !important;
+    margin-bottom: 340px !important;
+  }
+  #demo {
+    font-size: 35px !important;
+    margin-bottom: 0px !important;
+    height: 50px;
+  }
+  .credits p {
+    font-size: 14px !important;
+  }
+}
+p {
+  letter-spacing: 3px;
+  font-family: Montserrat, sans-serif !important;
+  height: 90px;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 0px;
+  background: transparent !important;
+
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 1000px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-instagram {
+  color: white;
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
