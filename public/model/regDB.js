@@ -24,4 +24,4 @@ const registered=new mongoose.Schema({
 
 })
 
-module.exports=mongoose.model('registered',registered)
+module.exports=mongoose.model('register',registered)

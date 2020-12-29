@@ -9,9 +9,6 @@ mongoose.connect( process.env.MONGO_URI ||'mongodb://localhost:27017/registers',
 const con = mongoose.connection
 con.on('open', function () { console.log("mogoDB connection established  successfully..!") })
 const regdb = require('./public/model/regDB');
-mongoose.connect( process.env.MONGO_URI ||'mongodb://localhost:27017/registers',{ useNewUrlParser: true, useUnifiedTopology: true });
-const con1 = mongoose.connection
-con1.on('open', function () { console.log("mogoDB connection established  successfully..!") })
 const QDB = require('./public/model/queryDB');
 
 
