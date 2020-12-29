@@ -105,8 +105,8 @@
                         <div class="flip-card-back">
                             <p>The event which tests your logical, mathematical and basic programming skills. Test your mettle in in programming skills, here at TECHFest. Happy coding!</p>
                             <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
-                        <span class="fa fa-sign-in"> Register</span>
+                    <a data-toggle="modal" data-target="#loginModal" >
+                        <span class="fa fa-sign-in" > Register</span>
                             </a>
                             </span>
                         </div>
@@ -126,7 +126,7 @@
                             <p>Our innovative minds are always occupied with the mystic power of creation. The idea might just be a sudden click or a long processed plan, every project is special. Showcase the impact of your projects and tell the world about
                                 your creativity and dynamism. </p>
                             <span class="navbar-text">
-                            <a data-toggle="modal" data-target="#loginModal">
+                            <a data-toggle="modal" data-target="#loginModal" >
                                 <span class="fa fa-sign-in"> Register</span>
                             </a>
                             </span>
@@ -215,7 +215,7 @@
                         <div class="flip-card-back">
                             <p>This is the classic treasure hunt event which will be conducted on snapchat.</p>
                             <span class="navbar-text">
-                                        <a data-toggle="modal" data-target="#loginModal">
+                                        <a data-toggle="modal" data-target="#loginModal" >
                                             <span class="fa fa-sign-in"> Register</span>
                             </a>
                             </span>
@@ -339,7 +339,7 @@
                 </button>
                     </div>
                     <div class="modal-body">
-                        <form action="/register">
+                        <form action="/register" method="POST">
                             <div class="form-group row">
                                 <label for="firstname" class="col-md-2 col-form-label">First Name</label>
                                 <div class="col-md-10">
@@ -371,7 +371,7 @@
                             <div class="form-group row">
                                 <div class="col-md-3 offset-2">
                                     <label for="options">Event</label>
-                                    <select class="form-control">
+                                    <select class="form-control" name="event">
                                 <option>Hackathon</option>
                                 <option>Coding</option>
                                 <option>Project Exhibition</option>
@@ -388,7 +388,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label for="options">Team Size</label>
-                                    <select id="options" class="form-control">
+                                    <select id="options" class="form-control" name="team">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
@@ -397,7 +397,7 @@
                                 </div>
                                 <div class="col-md-3">
                                     <label for="options">College</label>
-                                    <select class="form-control">
+                                    <select class="form-control" name="college">
                                 <option>DSCE</option>
                                 <option>DSU</option>
                                 <option>DSATM</option>
