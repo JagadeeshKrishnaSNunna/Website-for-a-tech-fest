@@ -1,11 +1,8 @@
 const mongoose=require('mongoose')
 
-const registered=new mongoose.Schema({
+
+const Query=mongoose.Schema({
     _id:{
-        type:String,
-        required:true
-    },
-    email:{
         type:String,
         required:true
     },
@@ -13,15 +10,19 @@ const registered=new mongoose.Schema({
         type:String,
         required:true
     },
-    team:{
-        type:Number,
-        required:true,
-    },
-    college:{
+    natureOfQuery:{
         type:String,
-        required:true,
+        required:true
+    },
+    mobile:{
+        type:Number,
+        required:true
+    },
+    query:{
+        type:String,
+        required:true
     }
-
 })
 
-module.exports=mongoose.model('register',registered)
+
+module.exports=mongoose.model('Query',Query)

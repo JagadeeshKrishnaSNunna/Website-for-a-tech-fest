@@ -9,7 +9,7 @@ mongoose.connect( process.env.MONGO_URI ||'mongodb://localhost:27017/registers',
 const con = mongoose.connection
 con.on('open', function () { console.log("mogoDB connection established  successfully..!") })
 const regdb = require('./public/model/regDB');
-
+const QDB = require('./public/model/queryDB');
 
 
 app.use(bodyParser.json())
@@ -39,9 +39,23 @@ app.get('/Team',(req,res)=>{
     
 })
 app.get('/Contactus',(req,res)=>{
-    
     res.sendFile(path.join(__dirname,'views','contactus.html'))
-    
+})
+app.post('/Contactus',async(req,res)=>{
+    try{
+        const qDB=new QDB({
+            _id:req.body.email,
+            Name:req.body.name,
+            natureOfQuery:req.body.nature,
+            mobile:req.body.phone,
+            query:req.body.message,
+        })
+        const s=await qDB.save();
+    }
+    catch(e){
+        console.log(e);
+    }
+    res.redirect('/')
 })
 app.get('/AdminPage',(req,res)=>{
     
@@ -63,7 +77,6 @@ app.post('/register',async(req,res)=>{
            college:req.body.college
        })
        const s=await regDb.save()
-       console.log(regDb)
     }
     
     catch(e){console.log(e);}
