@@ -51,7 +51,6 @@ app.post('/Contactus',async(req,res)=>{
             query:req.body.message,
         })
         const s=await qDB.save();
-        console.log(qDB);
     }
     catch(e){
         console.log(e);
@@ -73,7 +72,6 @@ app.post('/register',async(req,res)=>{
            college:req.body.college
        })
        const s=await regDb.save()
-       console.log(regDb)
     }
     
     catch(e){console.log(e);}
