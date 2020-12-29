@@ -9,6 +9,18 @@
 .info {
   margin-bottom: 230px !important;
 }
+#AdminLogin {
+  position: absolute;
+  z-index: 2;
+  bottom: 5px;
+  right: 5px;
+  color: aliceblue;
+}
+#AdminLogin:hover {
+  color: dodgerblue;
+  cursor: pointer;
+}
+
 @media only screen and (max-width: 768px) {
   .container p {
     text-align: left !important;
