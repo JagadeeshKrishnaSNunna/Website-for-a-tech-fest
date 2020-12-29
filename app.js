@@ -43,6 +43,11 @@ app.get('/Contactus',(req,res)=>{
     res.sendFile(path.join(__dirname,'views','contactus.html'))
     
 })
+app.get('/AdminPage',(req,res)=>{
+    
+    res.sendFile(path.join(__dirname,'views','adminpage.html'))
+    
+})
 
 
 app.get('/register',(req,res)=>{
@@ -66,6 +71,15 @@ app.post('/register',async(req,res)=>{
     res.redirect('/')
 })
 
+app.get('/getEvents', (req, response) => {
+    console.log("YO!");
+    regdb.find({}, (err, res) => {if (err) {
+        console.log(err);
+      } else {
+          console.log(res);
+        response.send(res);
+      }});
+})
 
 
 
