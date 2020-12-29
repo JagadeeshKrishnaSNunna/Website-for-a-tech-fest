@@ -2,7 +2,7 @@ const mongoose=require('mongoose')
 
 
 const Query=mongoose.Schema({
-    _id:{
+    email:{
         type:String,
         required:true
     },

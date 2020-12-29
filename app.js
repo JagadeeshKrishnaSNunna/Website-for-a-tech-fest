@@ -44,7 +44,7 @@ app.get('/Contactus',(req,res)=>{
 app.post('/Contactus',async(req,res)=>{
     try{
         const qDB=new QDB({
-            _id:req.body.email,
+            email:req.body.email,
             Name:req.body.name,
             natureOfQuery:req.body.nature,
             mobile:req.body.phone,
@@ -70,7 +70,7 @@ app.get('/register',(req,res)=>{
 app.post('/register',async(req,res)=>{
     try{
        const regDb=new regdb({
-           _id:req.body.event,
+           event:req.body.event,
            email:req.body.emailid,
            Name:req.body.firstname+req.body.lastname,
            team:req.body.team,
@@ -85,14 +85,20 @@ app.post('/register',async(req,res)=>{
 })
 
 app.get('/getEvents', (req, response) => {
-    console.log("YO!");
     regdb.find({}, (err, res) => {if (err) {
         console.log(err);
       } else {
-          console.log(res);
         response.send(res);
       }});
 })
+app.get('/getQueries', (req, response) => {
+    QDB.find({}, (err, res) => {if (err) {
+        console.log(err);
+      } else {
+        response.send(res);
+      }});
+})
+
 
 
 

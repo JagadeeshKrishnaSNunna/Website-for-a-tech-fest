@@ -1,7 +1,7 @@
 const mongoose=require('mongoose')
 
 const registered=new mongoose.Schema({
-    _id:{
+    event:{
         type:String,
         required:true
     },
