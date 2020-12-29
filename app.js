@@ -9,7 +9,10 @@ mongoose.connect( process.env.MONGO_URI ||'mongodb://localhost:27017/registers',
 const con = mongoose.connection
 con.on('open', function () { console.log("mogoDB connection established  successfully..!") })
 const regdb = require('./public/model/regDB');
-
+mongoose.connect( process.env.MONGO_URI ||'mongodb://localhost:27017/registers',{ useNewUrlParser: true, useUnifiedTopology: true });
+const con1 = mongoose.connection
+con1.on('open', function () { console.log("mogoDB connection established  successfully..!") })
+const QDB = require('./public/model/queryDB');
 
 
 app.use(bodyParser.json())
@@ -39,9 +42,24 @@ app.get('/Team',(req,res)=>{
     
 })
 app.get('/Contactus',(req,res)=>{
-    
     res.sendFile(path.join(__dirname,'views','contactus.html'))
-    
+})
+app.post('/Contactus',async(req,res)=>{
+    try{
+        const qDB=new QDB({
+            _id:req.body.email,
+            Name:req.body.name,
+            natureOfQuery:req.body.nature,
+            mobile:req.body.phone,
+            query:req.body.message,
+        })
+        const s=await qDB.save();
+        console.log(qDB);
+    }
+    catch(e){
+        console.log(e);
+    }
+    res.redirect('/')
 })
 
 
