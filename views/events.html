@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image" href="images/visagefinal.jpg">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="jquery-3.3.1.js"></script>
+    <title>Events</title>
+    <link rel="stylesheet" href="css/flip.css">
+    <link rel="stylesheet" href="css/bg.css">
+    <style>
+        .credits {
+            margin-top: 5% !important;
+        }
+        
+        .fa-sign-in {
+            font-size: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js"> </div>
+    <div class="row  ml-1 mr-1">
+        <div class=" mainicon mr-auto">
+            <a href="/"><img src="images/visagefinal.jpg" style="border-radius:50%" class="lg1" width="120" height="110"></a>
+
+        </div>
+        <div class="logo">
+            <a href="https://www.dsce.edu.in"><img src="images/dsce.png" class="lg2" width="135" height="125" style="margin-top: 10px"></a>
+
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navb">
+
+        <button id="buton" class="navbar-toggler pull-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <i class="fa fa-navicon" style="font-size:25px;color:white;border:0px;padding: 0px"></i>
+                        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-2">
+                <li class="nav-item  mr-4">
+                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active mr-4">
+                    <a class="nav-link" href="/Events">Events</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="/sponsors">Sponsors</a>
+                </li>
+                <li class="nav-item mr-4">
+                    <a class="nav-link" href="/Team">Meet the team</a>
+                </li>
+                <li class="nav-item  mr-4">
+                    <a class="nav-link" href="/Contactus">Contact Us</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </nav>
+    <div class="container">
+
+        <br><br>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/hack.jpeg" alt="Avatar" class="im">
+                            <div class="card-body text-centre">
+                                <p class="card-text">HACKATHON</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p style="font-size:19px;text-align: center;padding: 3px">An 18 hr hackathon to showcase your talent and indomitable team work in this event. Impress the techies and win exciting goodies in the end! </p>
+                            <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/coding.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">CODING</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>The event which tests your logical, mathematical and basic programming skills. Test your mettle in in programming skills, here at TECHFest. Happy coding!</p>
+                            <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/proj.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">PROJECT EXHIBITION</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Our innovative minds are always occupied with the mystic power of creation. The idea might just be a sudden click or a long processed plan, every project is special. Showcase the impact of your projects and tell the world about
+                                your creativity and dynamism. </p>
+                            <span class="navbar-text">
+                            <a data-toggle="modal" data-target="#loginModal">
+                                <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/quiz.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">IT QUIZ</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>You might have tested your programming expertise at some point of time, but do you have the insight to the IT sector and the inustries that encircle it? Test your grip over the knowledge of the IT industires here at TECHFest!
+                            </p>
+                            <span class="navbar-text">
+                                <a data-toggle="modal" data-target="#loginModal">
+                                    <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/ai2.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">AI CHAMPIONSHIP</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+
+                            <p>The AI championship takes you deeper into the world of artificial intelligence where you will discover much more fascinating stuff related to the field and get more comfortable with the technology.</p>
+                            <span class="navbar-text">
+                                <a data-toggle="modal" data-target="#loginModal">
+                                    <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/cap.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">CAPTURE THE FLAG</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+
+                            <p>An important aspect that adds an edge to your core programming skills is aptitude. Capture the flag tests your problem solving skills with coding skills. </p>
+                            <span class="navbar-text">
+                                        <a data-toggle="modal" data-target="#loginModal">
+                                            <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/trea.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">TREASURE HUNT</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>This is the classic treasure hunt event which will be conducted on snapchat.</p>
+                            <span class="navbar-text">
+                                        <a data-toggle="modal" data-target="#loginModal">
+                                            <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/quizn.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">QUIZ</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+
+                            <p> A quiz based on 2 of the most spectacular TV shows, FRESH PRINCE OF BEL-AIR and GOT. Its time that your binge-watchng earns you some exciting prizes!</p>
+                            <span class="navbar-text">
+                                        <a data-toggle="modal" data-target="#loginModal">
+                                            <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/pub.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">PUBG</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Get ready to be engaged in one of the most fierce virtual battles with this exceptionally popular multi-player game and win exciting goodies! </p>
+                            <span class="navbar-text">
+                                        <a data-toggle="modal" data-target="#loginModal">
+                                            <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/fifa.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">FIFA</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>Football lovers, TECHFest brings one of the most reverred virtual competitions, wherein you grill your skills with the console in your hand, ready to concquer the opponents!</p>
+                            <span class="navbar-text">
+                                        <a data-toggle="modal" data-target="#loginModal">
+                                            <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/cs.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">COUNTER STRIKE</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>With yet another intense and fierce battle game, Counter Strike: GO, the technical extraveganza becomes yet more dynamic. </p>
+                            <span class="navbar-text">
+                                        <a data-toggle="modal" data-target="#loginModal">
+                                            <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <img src="images/photo1.jpeg" alt="Avatar" class="im">
+                            <div class="card-body ">
+                                <p class="card-text">PHOTOGRAPHY</p>
+                            </div>
+                        </div>
+                        <div class="flip-card-back">
+                            <p>A photographer sees this world in different way, in a whole different aspect. Participate in the photography competition and potray your thoughts through the camera, and introduce people to your perspective of surroundings
+                            </p>
+                            <span class="navbar-text">
+                                        <a data-toggle="modal" data-target="#loginModal">
+                                            <span class="fa fa-sign-in"> Register</span>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="loginModal" class="modal fade" role="dialog">
+            <div class="modal-dialog modal-lg" role="content">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Register</h4>
+                        <button type="button" class="close" data-dismiss="modal">
+                    &times;
+                </button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="/register">
+                            <div class="form-group row">
+                                <label for="firstname" class="col-md-2 col-form-label">First Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="lasttname" class="col-md-2 col-form-label">Last Name</label>
+                                <div class="col-md-10">
+                                    <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="telnum" class="col-12 col-md-2 col-form-label">Contact</label>
+                                <div class="col-5 col-md-3">
+                                    <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code" value="+91">
+                                </div>
+
+                                <div class="col-7 col-md-7">
+                                    <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel Number">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="emailid" class="col-md-2 col-form-label">Email Id</label>
+                                <div class="col-md-10">
+                                    <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email Id">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-3 offset-2">
+                                    <label for="options">Event</label>
+                                    <select class="form-control">
+                                <option>Hackathon</option>
+                                <option>Coding</option>
+                                <option>Project Exhibition</option>
+                                <option>IT Quiz</option>
+                                <option>AI Championship</option>
+                                <option>Capture the Flag</option>
+                                <option>Treasure Hunt</option>
+                                <option>Quiz</option>
+                                <option>PUBG</option>
+                                <option>Fifa</option>
+                                <option>Counter Strike</option>
+                                <option>Photography</option>
+                            </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="options">Team Size</label>
+                                    <select id="options" class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="options">College</label>
+                                    <select class="form-control">
+                                <option>DSCE</option>
+                                <option>DSU</option>
+                                <option>DSATM</option>
+                            </select>
+                                </div>
+                            </div>
+                            <!-- <div class="form-group row">
+                        <label for="feedback" class="col-md-2 col-form-label">Your Feedback</label>
+                        <div class="col-md-10">
+                            <textarea class="form-control" id="feedback" name="feedback" rows="12"></textarea>
+                        </div>
+                    </div> -->
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn btn-primary">Register</button>
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="credits">
+        <p style="font-size:18px;text-align: center;color: white">Developed by:  <u><a style="color:white" href="https://www.linkedin.com/in/hemanth-kumar-2079a5181">Hemanth Kumar V</a></u> &nbsp; <u><a style="color:white" href="https://www.linkedin.com/in/ajaykumar-s-hadimani-5b2079185/">Ajaykumar S Hadimani</a></u> &nbsp;<u><a style="color:white" href="https://www.linkedin.com/in/animesh-maheshwari-8069ab157/">Animesh Maheshwari</a></u> &nbsp;<u><a style="color:white" href="www.linkedin.com/in/yogesh-kumar-4ab03a181"> Bhargav</a></u></p>
+        </div> -->
+    </div>
+</body>
+<script type="text/javascript" src="js/particles.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
+</html>
