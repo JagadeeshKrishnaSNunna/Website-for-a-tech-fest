@@ -20,3 +20,16 @@ p {
     font-size: 30px;
     height: auto;
 }
+
+#goBack {
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    color: aliceblue;
+}
+
+#goBack:hover {
+    color: dodgerblue;
+    cursor: pointer;
+}
